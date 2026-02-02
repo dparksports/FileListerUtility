@@ -1,4 +1,4 @@
-# File Lister Utility
+# MyFiles
 ![Dashboard Screenshot](screenshot.png)
 
 A high-performance file management and comparison tool designed for speed and reliability.
