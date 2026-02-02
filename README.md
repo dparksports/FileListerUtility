@@ -15,10 +15,10 @@
 
 ## 📦 Installation
 
-1.  Go to the [Releases](https://github.com/USER/FileLister/releases) page.
-2.  Download the latest `FileLister_vX.X.X.zip`.
+1.  Go to the [Releases](https://github.com/dparksports/MyFiles/releases) page.
+2.  Download the latest [MyFiles_v1.3.0.zip](https://github.com/dparksports/MyFiles/releases/download/v1.3.0/MyFiles_v1.3.0.zip).
 3.  Extract the archive to a folder of your choice.
-4.  Run `FileLister.exe`.
+4.  Run `MyFiles.exe`.
 
 *Note: Requires .NET Desktop Runtime (bundled or prompted if missing).*
 
