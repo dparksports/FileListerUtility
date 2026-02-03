@@ -11,6 +11,9 @@ namespace FileLister
         {
             base.OnStartup(e);
 
+            // Prevent shutdown when EULA window closes
+            ShutdownMode = ShutdownMode.OnExplicitShutdown;
+
             // 1. Initialize Settings
             SettingsManager.Load();
 
@@ -39,6 +42,9 @@ namespace FileLister
             // 4. Show Main Window
             var mainWindow = new MainWindow();
             mainWindow.Show();
+
+            // Restore shutdown mode so closing main window exits app
+            ShutdownMode = ShutdownMode.OnMainWindowClose;
         }
 
         private void InitializeAnalytics()
