@@ -41,7 +41,7 @@ namespace FileLister
 
 
 
-        private const string STATE_FILE = "last_active_scan.txt";
+        private string STATE_FILE => AppDataHelper.GetFilePath("last_active_scan.txt");
 
 
         public MainWindow()
@@ -183,7 +183,7 @@ namespace FileLister
                 
                 // 1. Auto-Save Scan List
                 string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-                string filename = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, $"scan_{timestamp}.csv");
+                string filename = AppDataHelper.GetFilePath($"scan_{timestamp}.csv");
                 
                 try 
                 {

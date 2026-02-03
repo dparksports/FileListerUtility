@@ -13,7 +13,7 @@ namespace FileLister
 
     public static class SettingsManager
     {
-        private const string SettingsFile = "settings.json";
+        private static string SettingsFile => AppDataHelper.GetFilePath("settings.json");
         public static AppSettings Settings { get; private set; } = new AppSettings();
 
         static SettingsManager()

@@ -19,7 +19,7 @@ namespace FileLister
 
     public static class ScanHistoryManager
     {
-        private const string HistoryFile = "scan_history.json";
+        private static string HistoryFile => AppDataHelper.GetFilePath("scan_history.json");
         private static List<ScanHistoryItem> _history = new List<ScanHistoryItem>();
 
         static ScanHistoryManager()

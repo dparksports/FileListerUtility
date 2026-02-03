@@ -14,6 +14,9 @@ namespace FileLister
             // Prevent shutdown when EULA window closes
             ShutdownMode = ShutdownMode.OnExplicitShutdown;
 
+            // 0. Initialize Storage & Migrate Data
+            AppDataHelper.Initialize();
+
             // 1. Initialize Settings
             SettingsManager.Load();
 
